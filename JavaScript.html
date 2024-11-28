@@ -1,5 +1,4 @@
-//Creating a web page with javascript
-
+//Creating a web page to changing background color
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,15 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="text-align: center;font-size: xx-large;color: red; background-color: aqua;">
-    <h1>Ranjith</h1>
-    <p id="demo">java script program</p>
-    <button type="button" onclick="document.getElementById('demo').innerHTML='hello javascript!'">submit</button>
-    <button type="button" onclick="document.getElementById('demo').innerHTML='Welcome to one more time'">back</button>
+<body bgcolor="red">
+    <script type="text/javascript">
+        alert("First script block");
+        var mystr="56.02 degree centigrade";
+        alert(mystr);
+    </script>
+    <script type="text/javascript">
+        document.bgcolor="white";
+        alert("SECOND SCRIPT BLOCK");
+    </script>
+    
 </body>
 </html>
 
-//creating a web page with variables
+//Creating a web page with javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x='hello';
+        var y=prompt("ENter the value:");
+        var z;
+        document.write(x+" "+y+"<br>");
+        z=x+" "+y;
+        
+        alert(z);
+    </script>
+</body>
+</html>
+
+//Creating a web page with if condition
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var fno=10;
+        var sno=20;
+        var ans;
+        ans=fno+sno;
+        alert(ans);
+        if(ans!=0)
+    {
+        document.write("The sum of values is not equal to 0");
+    }
+    </script>
+</body>
+</html>
+
+//Creating a web page to print sum of two numbers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body bgcolor="green">
+    <title style="background-color: red;">SUM</title>
+    <h1>ADDITION PROGRAM</h1>
+    <p id="demo"></p>
+    <script>
+        var num1=Number(prompt("Enter the  first value",10));
+        num2=Number(prompt("Enter the second value",10));
+        var num3=0;
+        num3=num1+num2;
+        alert(+num3);
+        document.write("THE SUM OF TWO DIGIT IS",+num3);
+    </script>
+    
+</body>
+</html>
+
+//Creating a web page with type of
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,20 +99,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="text-align: center;font-size: xx-large; color: red;">
-    <marquee behavior="alternate" direction="right">hii</marquee>
+<body style="text-align: center;font-size: xx-large;">
+    <p id="demo"></p>
     <script>
-        var x="welcome";
-        alert(x);
-        var y="2016";
-        alert(y);
+        document.getElementById("demo").innerHTML=
+        typeof "Ranjith"+"<br>"+
+        typeof 3.14+"<br>"+
+        typeof false+"<br>"+
+        typeof [1,2,3,4] +"<br>"+
+        typeof{name:'Ranjith',age:34};
     </script>
     
 </body>
 </html>
 
 
-//creating web page with variables
+//Creating a web page with java script
 
 <!DOCTYPE html>
 <html lang="en">
@@ -46,98 +123,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="text-align: center;font-size: xx-large;color: aqua;">
+<body style="text-align: center;font-size: xx-large;">
+    <p id="demo"></p>
+    <script>    document.getElementById("demo").innerHTML=
+    typeof undefined+"<br>"+
+    typeof null +"<br>"+
+    (null === undefined)+"<br>"+
+    (null == undefined);
+</script>
+
+</body>
+</html>
+
+//Creating a web page with script tag
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Numbers</h1>
     <p id="demo"></p>
     <script>
-        var pi=3.14;
-        var person="Ranjith";
-        var answer='yes';
-        document.getElementById('demo').innerHTML=pi;
-        //document.getElementById('demo').innerHTML=person;
-        //document.getElementById('demo').innerHTML=answer;
+        document.getElementById("demo").innerHTML=10.50;
     </script>
 </body>
 </html>
 
-
-//Creating a web page with addition operation
+//Creating a web page with arithmetic operation
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="text-align: center;font-size: xx-large;color: aqua;">
-    <h1>Statements</h1>
+<body>
+    <p>
+        <script>
+            var n1=Number(prompt("Enter the number1",00));
+            var n2=Number(prompt("Enter the number2",00));
+            var ans;
+            ans=n1+n2;
+            document.write("The addition value of two number",ans);
+            alert("Addition");       
+         </script>
+    </p>
+    <p>
+        <script>
+            ans=n1-n2;
+            document.write("The substraction value of two number",ans);
+            alert("Substraction"); 
+        </script>
+    </p>
+    <p>
+        <script>
+            ans=n1*n2;
+            document.write("The multiplication value of two number",ans);
+            alert("multiplication"); 
+        </script>
+    </p>
+    <p>
+        <script>
+            ans=n1/n2;
+            document.write("The division value of two number",ans);
+            alert("Division"); 
+        </script>
+    </p>
+    <p>
+        <script>
+            ans=n1%n2;
+            document.write("The Modules value of two number",ans);
+            alert("Modules"); 
+        </script>
+    </p>
+</body>
+</html>
+
+//Creating a web page with alert message
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var no1=15;
+        var no2=20;
+        var ans;
+        ans=15/10;
+        alert(ans);
+        alert(15/10);
+        ans=no1/no2;
+        alert(ans);
+    </script>
+</body>
+</html>
+
+//Creating a web page with moduls operator
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ranjith</h1>
     <p id="demo"></p>
     <script>
         var x=5;
-        var y=5;
-        z=x+y;
-        document.getElementById('demo').innerHTML=z;
+        var y=2;
+        var z=x%y;
+        document.getElementById("demo").innerHTML=z;
     </script>
 </body>
 </html>
 
-
-//Creating a web page with addition operation
-
+//comparison operator
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Comparision operator</title>
 </head>
-<body style="text-align: center;font-size: xx-large;color: aqua;">
-    <h1>Statements</h1>
-    <p id="demo"></p>
+<body>
     <script>
-        var x=5;
-        var y=5;
-        document.getElementById('demo').innerHTML=x+y;
+        var a=12,b=4;
+        document.write("Result"+a+"Greater than"+b+"is="+(a>b)+"<br/>");
+        document.write("Result"+a+"Greater than equal to"+b+"is="+(a>=b)+"<br/>");
+        document.write("Result"+a+"less than or equal to"+b+"is="+(a<=b)+"<br/>");
+        document.write("Result"+a+"less than"+b+"is="+(a<b)+"<br/>");
+        document.write("Result"+a+"Equal to"+b+"is="+(a==b)+"<br/>");
+        document.write("Result"+a+"not equal to"+b+"is="+(a!=b)+"<br/>");
+        document.write("Result"+a+"Greater than"+b+"is="+(a===b)+"<br/>");
     </script>
-</body>
-</html>
-
-
-//Creating a web page with variables
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body style="text-align: center;font-size: xx-large;color: aqua;">
-    <p id="demo"></p>
-    <script>
-        var x=5+6;
-        var y=x*10;
-        document.getElementById('demo').innerHTML=y;
-    </script>
-</body>
-</html>
-
-//creating a web page with javascript
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body style="text-align: center;font-size: xx-large;color: gold;">
-<h1>Ranjith</h1>
-<script>
-    var name="RANJITH";
-    var msg="Hello my name is"+name+"i'm learning javascript";
-    alert(msg)
-    document.write(msg);
-</script>    
 </body>
 </html>
