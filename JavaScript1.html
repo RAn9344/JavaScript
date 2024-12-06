@@ -1,0 +1,509 @@
+//increment decrement operator
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment,Decrement Operator</title>
+</head>
+<body>   
+    <h1>Increment,Decrement Operator</h1>
+    <script>
+        var a=5,b=20;
+        document.write("result of"+a +" is="+(a++)+"<br/>");
+    document.write("result of"+a+" is="+(++a)+"<br/>");
+    document.write("result of"+a+" is="+(a)+"<br/>");
+    document.write("result of"+a+" is="+(a--)+"<br/>");
+    document.write("result of"+a+" is="+(--a)+"<br/>");
+    document.write("result of"+a+'Equal to'+b+"is ="+(a)+"<br/>");
+    </script>
+</body>
+</html>
+
+//web page operator
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> ++ operator</h1>
+    <p id="demo"></p>
+    <script>
+        var x=5;
+        x++;
+        var z=x;
+        document.getElementById('demo').innerHTML=z;
+    </script>
+</body>
+</html>
+
+//assignment operator
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment operator</title>
+</head>
+<body>
+    <h1>Assignment operator</h1>
+    <script>
+        var a=12,b=4;
+        var c=a+b;
+        document.write("Result of"+a+"and"+b+"is="+c+"<br/>");
+        c+=a
+        document.write("Result of"+a+"and"+b+"is="+c+"<br/>");
+        c-=a
+        document.write("Result of"+a+"and"+b+"is="+c+"<br/>");
+        c*=a
+        document.write("Result of"+a+"and"+b+"is="+c+"<br/>");
+        c/=a
+        document.write("Result of"+a+"and"+b+"is="+c+"<br/>");
+        c%=2
+        document.write("Result of"+a+"and"+b+"is="+c+"<br/>");
+        c+=a
+    </script>
+</body>
+</html>
+
+//create a web page with logical operator
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .results{
+            border: green 1px solid;
+            background-color: aliceblue;
+            text-align: left;
+            padding-left: 20px;
+            height: 300px;
+            width: 95%;
+
+        }
+        .resultText{
+            font-size: 20px;
+            font-style: normal;
+            color: blue;
+        }
+    </style>
+    </head>
+<body>
+    <div class="results">
+        <h2>Results</h2>
+        <div class="resultText">
+            <p id="result1"></p>
+            <p id="result2"></p>
+            <p id="result3"></p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('result1').innerHTML="!true:"+!true;
+        var x=5;
+        document.getElementById('result2').innerHTML="var x=5</br>!x="+!x;
+        var y=0;
+        document.getElementById('result3').innerHTML="var y=0</br>!y="+!y;
+    </script>
+</body>
+</html>
+
+//web page with operator
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="pink">
+    <script>
+        var a=5;
+        var b=10;
+        var linebreak="<br/>";
+        document.write("value of a=>(a=b)=>");
+        result=(a=b);
+        document.write(result);
+        document.write(linebreak);
+        document.write("value of a=> (a+=b)=>");
+        result=(a+=b);
+        document.write(result);
+        document.write(linebreak);
+        document.write("value of a=> (a-=b)=>");
+        result=(a-=b);
+        document.write(result);
+        document.write(linebreak);
+        document.write("value of a=> (a*=b)=>");
+        result=(a*=b);
+        document.write(result);
+        document.write(linebreak);
+        document.write("value of a=> (a/=b)=>");
+        result=(a/=b);
+        document.write(result);
+        document.write(linebreak);
+        document.write("value of a=> (a%=b)=>");
+        result=(a%=b);
+        document.write(result);
+        document.write(linebreak);
+    </script>
+    
+</body>
+</html>
+
+//Ternary operator
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="red">
+    <script>
+        var a=Number(prompt("Enter the value",00));
+        var b=Number(prompt("Enter the value",00));
+        var r="<br/>";
+        document.write("((a>b)? 100:200)=>");
+        result=(a>b)? 100 : 200;
+        document.write(result);
+    </script>
+    
+</body>
+</html>
+
+//web page with operator
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=Number(prompt("Enter the value",00));
+        var b=Number(prompt("Enter the value",00));
+        var r="<br/>";
+        document.write("((a>b)? 100 : 200)=>");
+        result=(a>b)? 100:200;
+        document.write(result);
+        document.write(r);
+        document.write("((a<b)? 100 : 200)=>");
+        result=(a<b)? 100:200;
+        document.write(result);
+        document.write(r);
+    </script>
+</body>
+</html>
+
+//web page  with javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ranjith</h1>
+    <p id="demo"></p>
+    <script>
+        document.getElementById('demo').innerHTML=(5+6)*10;
+    </script>
+</body>
+</html>
+
+//web page with if condition
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var abc=10;
+        if(abc%2==0)
+    {
+        document.write("The Given values is"+abc);
+    }
+    </script>
+</body>
+</html>
+
+//Web page with if condition
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var deg=Number(prompt("Enter the degrees fahrenheit",32));
+        var deg2;
+        deg2=5/9*(deg-32);
+        document.write(deg+"\xB0 Fahrenheit is"+deg2+"\xB0 centigrade<BR>");
+            if(deg2<0)
+        {
+            document.write("That is below the freezing point of warter");
+        }
+        if(deg2==100)
+        {
+            document.write("That is boiling poit of water");
+        }
+    </script>
+</body>
+</html>
+
+//Creating a web page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var book=prompt("Enter the sting");
+        if(book=="history"){
+            document.write("<b>History book</b>");
+        }
+        else if(book=="maths"){
+            document.write("<b>Maths book</b>")
+        }
+        else if(book=="economics"){
+            document.write("<b>Economics book</b>");
+        }else{
+            document.write("<b>unknown book</b>");
+        }
+    </script>
+</body>
+</html>
+
+//Creating a web page with if condition
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF STATEMENTS</title>
+</head>
+<body>
+    <script>
+        var age=prompt("please enter your age");
+        if(age>=18)
+        document.write("Eligible for vote");
+        if(age<18)
+        document.write("Not Eligible");
+    </script>
+</body>
+</html>
+
+//creating a web page with if else if condition
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var one=prompt("Enter the first number");
+        var two=prompt("Enter the second number");
+        one=parseInt(one);
+        two=parseInt(two);
+        if(one==two)
+        document.write(one+"is equal to"+two+".");
+        else if(one<two)
+        document.write(one+"is less than "+two+".");
+        else
+        document.write(one+"is greater than "+two+".");
+    </script>
+</body>
+</html>
+
+//if elese condirion
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var hours= new Date().getHours();
+        if(hours<12)
+        document.write("good mornig!!<br>");
+        else
+        document.write("good Afternoon!!<br>");
+    </script>
+</body>
+</html>
+
+//Creating a web page with for loop
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var count;
+        document.write("Starting loop"+"<br>");
+        for(count=0;count<10;count++){
+            document.write("Current count :"+count);
+            document.write("<br>");
+        }
+        document.write("loop stop!");
+    </script>
+</body>
+</html>
+
+//Creating a web page with for loop
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for(let i=10;i>=1;i--){
+            if(i%2!==0){
+                document.write("odd number="+i+"<br>");
+            }
+        }
+    </script>
+</body>
+</html>
+
+//creating a web page with loop
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let colors=['RED','BLUE','GREEN','YELLOW','BLACK']
+        for(let color of colors){
+            document.write("color:"+color+"<br>");
+        }
+    </script>
+</body>
+</html>
+
+//creating a web page with loop
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person={
+            Name:"Ranjith",
+            Age:23,
+            Gender:'Male'
+        };
+        for(let key in person){
+            document.write(key+":"+person[key]+"<br>")
+        }
+    </script> 
+</body>
+</html>
+
+//Creating a web page with for loop
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        switch(new Date().getDay())
+        {
+            case 0:
+                day="Sunday";
+                break;
+            case 1:
+                day="Monday";
+                break;
+            case 2:
+                day="Tuesday";
+                break;
+            case 3:
+                day="Wedneshday";
+                break;
+            case 4:
+                day="Thursday";
+                break;
+            case 5:
+                day="Friday";
+                break;
+            case 6:
+                day="Saturday";
+                break;
+        }
+        alert("Today is"+day)
+    </script>
+</body>
+</html>
+
+//Creating a web page with while loop
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let i=15;
+        while(i>=1){
+            if(i%3==0){
+                document.write("Even number="+i+"<br>");
+            }
+            i--;
+        }
+    </script>
+</body>
+</html>
