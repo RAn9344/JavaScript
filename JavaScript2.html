@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let i=3;
+        do{
+            if(i%3==0){
+                document.write("Even number="+i+"<br>");
+            }
+            i++;
+        }while(i<=15)
+    </script>
+</body>
+</html>
+
+//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x=1;
+        document.write("Evening the loop<br>");
+        while(x<10)
+    {
+        x=x+1;
+        if(x==5){
+            continue;
+        }
+        document.write(x+"<br>");
+    }
+    document.write("Existing the loop");
+    </script>
+</body>
+</html>
+
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x=1;
+        document.write("Enter the loop<br>");
+        while(x<20)
+    {
+        if(x==5){
+            break;
+        }
+        x=x+1;
+        document.write(x+"<br>");
+    }
+    document.write("Existing the loop<br>")
+    </script>
+</body>
+</html>
+
+//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript in body</h1>
+    <p id="demo">A paragraph</p>
+    <button type="button" onclick="myfunction()">Try it</button>
+    <script>
+        function myfunction(){
+            document.getElementById("demo").innerHTML="paragraph changed."
+        }
+    </script>
+</body>
+</html>
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>External Javascript</h1>
+    <p id="demo">A paragraph</p>
+    <button type="button" onclick="ranjith">Try it</button>
+    <p><strong>Note:</strong>mufunction is stored in an external file called "myscript.js".</p>
+    <script src="myscript.js"></script>
+</body>
+</html>
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><center>
+    <table border="2">
+        <tr>
+            <td>NUMBER 1:</td>
+            <td>
+                <input type="text" id="num1">
+            </td>
+        </tr>
+        <tr>
+            <td>NUMBER 2:</td>
+            <td>
+                <input type="text"  id="num2">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="ADD" onclick="add();"/>
+                <input type="button" value="SUB" onclick="sub();"/>
+                <input type="button" value="MUL" onclick="mul();"/>
+                <input type="button" value="DIV" onclick="div();"/>
+                <input type="button" value="MOD" onclick="mod();"/>
+            </td>
+        </tr>
+        <tr>
+            <td>Get Result:</td>
+            <td>
+                <input type="text"  id="res">
+            </td>
+        </tr>
+<script>
+function add(){
+    var num1=document.getElementById("num1").value
+    f=parseInt(num1);
+
+    
+    var num2=document.getElementById("num2").value
+    s=parseInt(num2);
+
+    res.value=f+s;
+}
+function sub()
+{
+    var num1=document.getElementById("num1").value
+    f=parseInt(num1);
+
+    
+    var num2=document.getElementById("num2").value
+    s=parseInt(num2);
+
+    res.value=f-s;
+}
+function mul()
+{
+    var num1=document.getElementById("num1").value
+    f=parseInt(num1);
+
+    
+    var num2=document.getElementById("num2").value
+    s=parseInt(num2);
+
+    res.value=f*s;
+}
+function div()
+{
+    var num1=document.getElementById("num1").value
+    f=parseInt(num1);
+
+    
+    var num2=document.getElementById("num2").value
+    s=parseInt(num2);
+
+    res.value=f/s;
+}
+function mod()
+{
+    var num1=document.getElementById("num1").value
+    f=parseInt(num1);
+
+    
+    var num2=document.getElementById("num2").value
+    s=parseInt(num2);
+
+    res.value=f%s;
+}
+
+
+</script>
+
+    </table></center>
+</body>
+</html>
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>my web page</h1>
+    <p id="demo">I am a paragraph.</p>
+    <div id="mydiv">I am a div.</div>
+    <p>
+        <button type="button" onclick="mom()">Try it</button>
+    </p>
+    <script>
+        function mom(){
+            document.getElementById('demo').innerHTML="Hello Dolly.";
+            document.getElementById('mydiv').innerHTML="How are You?";
+        }
+    </script>
+    <p>when you click on "Try it",the two elements will change.</p>
+</body>
+</html>
+
+//
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center; font-size: 20px;">
+    <h1>Welcome to the systech</h1>
+    Enter a number: <input id="num"><br>
+    <button onclick="fact()">Factorial</button>
+    <p id="res"></p>
+    <script>
+        function fact(){
+            var i,num,f;
+            f=1;
+            num=document.getElementById('num').value;
+            for(i=1;i<=num;i++)
+        {
+            f=f*i;
+        }
+        i=i-1;
+        document.getElementById('res').innerHTML="The factorial of the number"+i+"is:"+f;
+        }
+    </script>
+    
+</body>
+</html>
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myfunction(){
+            document.getElementById('demo').innerHTML="full stack java";
+        }
+    </script>
+</head>
+<body>
+    <h1>systech group</h1>
+    <p id="demo">java programming</p>
+    <button type="button" onclick="myfunction()">click</button>
+</body>
+</html>
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>systech group</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore accusantium itaque beatae dolorum culpa illo tempora, accusamus obcaecati ipsum, et voluptate cum similique? Similique necessitatibus labore sit odio commodi ipsam.</p>
+    <p id="demo"></p>
+    <script>
+        const course=["java","python","html"];
+        course[0]="android";
+        course.push("django");
+        document.getElementById('demo').innerHTML=course;
+    </script>
+</body>
+</html>
+
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="sql"></h1>
+    <p id="myp"></p>
+    <script>
+         document.getElementsByClassName("sql").innerHTML='systech';
+         document.getElementById('myp').innerHTML='gropu';
+         document.getElementById('myp').innerHTML='javaprogramming';
+         //<p><strong>Note:</strong>the coment is not executed.</p>
+    </script> 
+    <p><strong>Note</strong>The comment block is not executed.</p>
+</body>
+</html>
+
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> JavaScript Operators</h1>
+    <p>the + operator concatenates(adds)string.</p>
+    <p id="demo"></p>
+    <script>
+        var text1="Ranjith";
+        var text2="doe";
+        document.getElementById("demo").innerHTML=text1+""+text2;
+    </script>
+</body>
+</html>
+
+//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var carName1="Volvo xc60";
+        var carName2="Volvo xc60";
+        var answer1="its alright";
+        var answer2="he is called'ranjith'";
+        var answer3="he is called'kumar'";
+        document.getElementById("demo").innerHTML=carName1+"<br>"+
+        carName2+"<br>"+
+        answer1+"<br>"+
+        answer2+"<br>"+
+        answer3;
+    </script>
+</body>
+</html>
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>systech Group</title>
+</head>
+<body>
+   <p id="demo"></p>
+   <script>
+    var person={
+        firsrname:"Ranjith",
+        lastname:"kumar",
+        age:25,
+        eyecolor:"blue"
+    };
+    document.getElementById("demo").innerHTML=person.firsrname+" is "+person.age+"years old.";
+   </script> 
+</body>
+</html>
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var person={
+            firstname:"Ranjith",
+            lastname:"Kumar",
+            id:102,
+            greeting:function(){
+                return this.firstname+" "+this.lastname;
+            }
+        };
+        document.getElementById("demo").innerHTML=person.greeting();
+    </script>
+</body>
+</html>
+
+//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var person=new Object();
+        person.firstname="Ranjith";
+        person.lastname="kumar";
+        person.age=25;
+        person.eyecolor="blue";
+        document.getElementById("demo").innerHTML
+        =person.firstname+" is "+person.age+"years old.";
+    </script>
+</body>
+</html>
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function person(name){
+            this.name=name;
+            this.hai=function(){
+                document.write('my name is'+name);
+            }
+        }
+        var person=new person("Ranjith");
+        person.hai();
+    </script> 
+</body>
+</html>
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var txt="";
+        var person={fname:"Ranjith",lname:"Kumar",age:25};
+        var x;
+        for(x in person){
+            txt+=person[x]+" ";
+        }
+        document.getElementById("demo").innerHTML=txt;
+    </script>
+</body>
+</html>
+
+//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    calculation and return the result:
+    <p id="demo"></p>
+    <script>
+        function myfunction(a,b){
+            return a*b;
+        }
+        document.getElementById("demo").innerHTML=myfunction(4,3);
+    </script>
+</body>
+</html>
+
+//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    convert to the fahrenheit to celsisus:
+    <p id="demo"></p>
+    <script>
+        function toCelsius(f){
+            return (5/9)*(f-32);
+        }
+        document.getElementById("demo").innerHTML=toCelsius(77);
+    </script>
+</body>
+</html>
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    function definition:
+    <p id="demo"></p>
+    <script>
+        var person={
+            firstname:"Ranjith",
+            lastname:"Kumar",
+            id:5566,
+            fullname:function(){
+                return this.firstname+" "+this.lastname;
+            }
+        };
+        document.getElementById("demo").innerHTML=person.fullname();
+    </script>
+</body>
+</html>
+
+//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Display the date.</p>
+    <button onclick="displayDate()">The time is?</button>
+    <script>
+        function displayDate(){
+            document.getElementById("demo").innerHTML=Date();
+        }
+    </script>
+</body>
+</html>
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <p>Current Date and Time: <span id="res"></span></p>
+  <script>
+    const d=new Date();
+    let yyyy=d.getFullYear();
+    let mn=d.getMonth()+1;
+    let dd=d.getDate();
+    let hh=d.getHours();
+    let mm=d.getMinutes();
+    let ss=d.getSeconds();
+    if(mn<10)
+      mn='0'+mn;
+    if(dd<10)
+      dd='0'+dd;
+    if(hh<10)
+      hh='0'+hh;
+    if(mm<10)
+      mm='0'+mm;
+    if(ss<10)
+      ss='0'+ss;
+    let apm=hh<12 ? 'AM' : 'PM';
+    hh=hh%12;
+    let dt=dd+"-"+mn+"-"+yyyy+" "+hh+":"+mm+":"+ss+" "+apm;
+    document.getElementById("res").innerHTML=dt;
+  </script>
+</body>
+</html>
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let pi=Math.PI;
+    document.write(pi+"<br>");
+    let sqrt=Math.sqrt(9);
+    document.write(sqrt);
+    var min=Math.min(10,25,47,23,18,8,21,30)
+    document.write(min+"<br>")
+    var max=Math.max(10,25,47,23,18,8,21,30)
+    document.write(max+"<br>")
+  </script>
+</body>
+</html>
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    document.write("Floor:"+Math.floor(12.7)+"<br>");
+    document.write("log :"+Math.log(12.7)+"<br>");
+    document.write("Max :"+Math.max(12.7,11,25,67)+"<br>");
+    document.write("Min :"+Math.min(3,78,90,12.7)+"<br>");
+    document.write("pow :"+Math.pow(10,2)+"<br>");
+    document.write("Random :"+Math.random()+"<br>");
+    document.write("Round :"+Math.round(12.7)+"<br>");
+    document.write("Sin :"+Math.sin(45)+"<br>");
+    document.write("Sqrt :"+Math.sqrt(12.7)+"<br>");
+    document.write("Exp :"+Math.exp(10)+"<br>");
+    document.write("Tan :"+Math.tan(45)+"<br>");
+  </script>
+</body>
+</html>
+
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body bgcolor="yellow">
+  <p><script>
+    var myarr=new Array();
+    myarr[0]="Hello";
+    myarr[1]="Javascript";
+    myarr[2]="Welcome To All";
+    alert("ONE DIMENSIONAL ARRAY")
+    document.write(" ",myarr[0]);
+    document.write("<br>")
+    document.write(" ",myarr[1]);
+    document.write("<br>")
+    document.write(" ",myarr[2]);
+    document.write("<br>")
+  </script></p>
+  <p><script>
+    var myarr=new Array();
+    myarr[0]=new Array();
+    myarr[0][0]=prompt("enter","";);
+    myarr[0][1]=prompt("enter","";);
+    myarr[0][2]=prompt("enter","";);
+    alert("Two Diemensional Array")
+    document.write(" ",myarr[0][0]);
+    document.write("<br>")
+    document.write(" ",myarr[1][1]);
+    document.write("<br>")
+    document.write(" ",myarr[0][2]);
+    document.write("<br>")
+  </script></p>
+</body>
+</html>
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="sort"></p>
+    <script>
+        const myArray=["python","java","django","andriod","springboot"];
+        myArray.sort();
+        document.getElementById("sort").innerHTML=myArray;
+    </script>
+</body>
+</html>
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Even Number: <span id="eve"></span></p>
+    <script>
+        const mynumbers=[12,32,43,5,65,46];
+        document.getElementById("eve").innerHTML=mynumbers.filter(even);
+        function even(x)
+        {
+            return x%2==0;
+        }
+    </script>
+</body>
+</html>
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Find Sum Of Number: <span id="sum"></span></p>
+    <script>
+        const number=[12,32,43,54];
+        let sum=0;
+        number.forEach(findSum);
+        function findSum(x)
+        {
+            sum+=x;
+        }
+        document.getElementById("sum").innerHTML=sum
+    </script> 
+</body>
+</html>
+
+//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var fruits=["Banana","orange","apple","mango"];
+        document.getElementById("demo").innerHTML=fruits;
+    </script>
+</body>
+</html>
+
+//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>sort method</p>
+    <button onclick="ra">Try it</button>
+    <p id="demo"></p>
+    <script>
+        var fruits=["banana","mango","jackfruit","apple"];
+        document.getElementById("demo").innerHTML=fruits;
+        function myfuction(){
+            fruits.sort();
+            fruits.reverse();
+            document.getElementById("demo").innerHTML=fruits
+        }
+    </script>
+</body>
+</html>
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>enter a number between 50 and 100.</p>
+    <input id="in" type="number" min="50" max="100" step="1">
+    <button type="button" onclick="er()">check</button>
+    <p id="mes"></p>
+    <script>
+        function er()
+        {
+            var message,x;
+            message=document.getElementById("mes");
+            message.innerHTML="";
+            x=document.getElementById("in").value;
+            
+            try{
+                if(x=="")
+                    throw "empty";
+                if(isNaN(x))
+                    throw "not a number";
+                x== Number(x);
+                    throw "OK!";
+                if(x<50)
+                    throw "less than 50";
+                if(x>100)
+                    throw "greater than 100";
+            }
+            catch(err)
+            {
+                message.innerHTML="The input is"+err;
+            }
+            
+        }
+    </script>
+
+</body>
+</html>
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        try
+        {
+            document.write(val);
+            document.write("Hello welcome to my home");
+        }
+        catch(err)
+        {
+            document.write(err.message);
+        }
+    </script>
+</body>
+</html>
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        try{
+            document.write(val);
+        }
+        catch(err)
+        {
+            document.write(err.message);
+        }
+        finally
+        {
+            document.write("<br>");
+            document.write("Hello welcome to systech");
+        }
+</body>
+</html>
+
+//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: rebeccapurple;">Hi I am ranjith</h1>
+    <script>
+        function greatThings(name){
+            return{
+                name:name,
+                work:function(){
+                    document.write('New students created with name:'+name+"<br>");
+                }
+            };
+        }
+        const emp1=greatThings('Ranjith kumar');
+        emp1.work();
+        const emp2=greatThings('Rishivanth');
+        emp2.work();
+    </script>
+</body>
+</html>
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: aquamarine;">Hi</h1>
+    <script>
+        var Student = function(rollno, name, age) {
+            return {
+                rollno: rollno,
+                name: name,
+                age: age,
+                greeting: function() {
+                    return `Hello, I am ${this.name}. My roll number is ${this.rollno} - I am ${this.age} years old.<br>`;
+                }
+            };
+        };
+
+        var Student1 = Student(1, 'Ranjith', 16);
+        document.write(Student1.greeting());
+
+        var Student2 = Student(21, 'Rishi', 13);
+        document.write(Student2.greeting());
+    </script>
+</body>
+</html>
+
+//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: blue;">hi</h1>
+    <script>
+        const person={
+            name:'Ranjith',
+            age:21,
+        }
+        const clonePerson=Object.assign({},person);
+        console.log(clonePerson);
+        clonePerson.name="Rishi";
+        document.write(clonePerson.name);
+        document.write(person.name);
+    </script>
+</body>
+</html>
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: aqua;">hi</h1>
+    <h3 style="color: yellow;">javascript getter and setter</h3>
+    <script>
+        let user={
+            get name(){
+                return this._name;
+
+            },
+            set name(value){
+                if(value.length<5){
+                    alert("Name Is sort,please give 5 charactr");
+                    return;
+                }
+                this._name=value;
+            }
+        };
+        user.name="Ranjith";
+        alert(user.name);
+        user.name="kumar";
+    </script>
+</body>
+</html>
+
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: blueviolet;">ji</h1>
+    <script>
+        function User(name,birthday){
+            this.name=name;
+            this.birthday=birthday;
+            Object.defineProperty(this,"age",{
+                get(){
+                    let todayYear=new Date().getFullYear();
+                    return todayYear-this.birthday.getFullYear();
+                }
+            });
+        }
+        let jason=new User("ranjith",new Date(2018,12,7));
+        alert(jason.birthday);
+        alert(jason.age);
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
