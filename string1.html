@@ -1,0 +1,308 @@
+//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p>Pattern of the String: <span id="res"></span></p>
+   <script>
+    let mystring="I live in Trichy";
+    let Pattern=/T/;
+    document.getElementById("res").innerHTML=Pattern.test(mystring);
+   </script> 
+</body>
+</html>
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>The value is <span class="x"></span></p>
+    <p>The value is <span class="x"></span></p>
+    <p>The value is <span class="x"></span></p>
+    <script>
+        var elements = document.getElementsByClassName("x");
+        var totElements = elements.length;
+        for(var i=0; i<totElements; i++)
+        {
+            elements[i].innerHTML=10;
+        }
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> The value is <span id="x"></span></p>
+    <script>
+        var element=document.getElementById("x");
+        element.innerHTML=10;
+    </script>
+</body>
+</html>
+
+//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>The value is <span id="x"></span></p>
+    <script>
+        var element=document.getElementById("x");
+        element.innerHTML=10;
+    </script>
+</body>
+</html>
+
+//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p name="redTxt">This is para one</p>
+    <p name="redTxt">This is para two</p>
+    <script>
+        var ec=document.getElementsByClassName("redTxt");
+        for(i=0;i<ec.length;i++)
+    {
+        ec[i].style.color="red";
+    }
+    </script>
+</body>
+</html>
+
+//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>getElementsByTagName()</h2>
+    <p>This is para one</p>
+    <p>This is para two</p>
+    <h2>The getElementsByTagName() Method</h2>
+    <p>This is para Three</p>
+    <p>This is para four</p>
+    <script>
+        var ec=document.getElementsByTagName("h2");
+        for(var i=0;i<ec.length;i++)
+    {
+        ec[i].style.backgroundColor="purple";
+        ec[i].style.padding="12px";
+        ec[i].style.color="white";
+    }
+    var ec=document.getElementsByTagName("p");
+    for(i=0;i<ec.length;i++)
+    {
+        ec[i].style.color="red";
+    }
+    </script>
+</body>
+</html>
+
+//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>This is para one</p>
+    <p class="red">This is para two</p>
+    <p>This is para three</p>
+    <p class="red">This is para five</p>
+    <script>
+        document.querySelector(".red").style.color="red";
+    </script>
+</body>
+</html>
+
+//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>This is para one</p>
+    <p class="red">This is para two</p>
+    <p>This is para three</p>
+    <p class="red">This is para five</p>
+    <script>
+        var ec=document.querySelectorAll(".red");
+        for( var i=0;i<ec.length;i++)
+        ec[i].style.color="red";
+    </script>
+</body>
+</html>
+
+//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>The Document.write()Method</h2>
+    <script>
+        document.write("Hi Theere!");
+    </script>
+</body>
+</html>
+//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Hi Theere!");
+    </script>
+</body>
+</html>
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="xyz"></p>
+    <script>
+        function myfun(x,y,z){
+            this.x=x;
+            this.y=y;
+            this.z=z;
+        }
+        const v=new myfun(10,20,30);
+        document.getElementById("xyz").innerHTML=v instanceof myfun;
+    </script>
+</body>
+</html>
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunc()
+        {
+            var ret=document.title;
+            alert("Document Title :" + ret);
+            var ret=document.URL;
+            alert("Document URL :"+ ret);
+            var ret=document.forms[0];
+            alert("Document First Form :"+ret);
+            var ret=document.forms[0].elements[1];
+            alert("second element:"+ret);
+        }
+    </script>
+</head>
+<body>
+    <h1 id="title">This is main tittle</h1>
+    <p>Click the button</p>
+    <form name="FirstForm">
+        <input type="button" value="ClickMe" onclick="myFunc();">
+        <input type="button" value="Cancel">
+    </form>
+    <form name="SecondForm">
+        <input type="button" value="Don't Click Me">
+    </form>
+</body>
+</html>
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myfun() {
+            var ret = document.getElementById("heading");
+            alert("Document Heading: " + ret.innerHTML);
+            var ret = document.getElementsByTagName("p");
+            alert("First Paragraph: " + ret[0].innerHTML);
+        }
+    </script>
+</head>
+<body>
+    <h1 id="heading">Systech Group</h1>
+    <p>Click the button</p>
+    <form id="form1" name="FirstForm">
+        <input type="button" value="Click me" onclick="myfun();">
+        <input type="button" value="Cancel">
+    </form>
+    <form id="form2" name="SecondForm">
+        <input type="button" value="Don't click me">
+    </form>
+</body>
+</html>
+
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Systech Group</h1>
+   <p>Welcome to Systech</p>
+   <script>
+    document.write(5+6);
+
+    
+   </script> 
+</body>
+</html>
+
+
